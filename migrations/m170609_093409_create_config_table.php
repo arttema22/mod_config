@@ -19,8 +19,8 @@ class m170609_093409_create_config_table extends Migration {
         $this->createTable('{{%config}}', [
             'id' => $this->primaryKey(),
             'param' => $this->string(128)->notNull(),
-            'value' => $this->text->notNull(),
-            'default' => $this->text->notNull(),
+            'value' => $this->text()->notNull(),
+            'default' => $this->text()->notNull(),
             'label' => $this->string(255)->notNull(),
             'type' => $this->string(128)->notNull(),
                 ], $tableOptions);

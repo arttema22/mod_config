@@ -3,6 +3,7 @@
 namespace app\modules\config\models;
 
 use Yii;
+use app\modules\config\Module;
 
 /**
  * This is the model class for table "{{%config}}".
@@ -43,12 +44,12 @@ class Config extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('module', 'ID'),
-            'param' => Yii::t('module', 'Param'),
-            'value' => Yii::t('module', 'Value'),
-            'default' => Yii::t('module', 'Default'),
-            'label' => Yii::t('module', 'Label'),
-            'type' => Yii::t('module', 'Type'),
+            'id' => Module::t('module', 'ID'),
+            'param' => Module::t('module', 'Param'),
+            'value' => Module::t('module', 'Value'),
+            'default' => Module::t('module', 'Default'),
+            'label' => Module::t('module', 'Label'),
+            'type' => Module::t('module', 'Type'),
         ];
     }
 }
